@@ -1,38 +1,142 @@
+.body {
+  margin:0;
+}
+* {
+  font-family: Montserrat;
+}
 .App {
-  text-align: center;
+  position: relative;
+  background: rgba(161, 214, 226, 0.2);
+  min-height: 600px;
+  ;
+}
+.custom-shape-divider-bottom-1610479141 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-shape-divider-bottom-1610479141 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 251px;
+  transform: rotateY(180deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-shape-divider-bottom-1610479141 .shape-fill {
+  fill: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header css */
+.header-container {
+  width: 65%;
+  margin: auto;
+  padding-top: 25px;
+}
+.header-container h1 {
+  display: inline-block;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
+.social-container {
+  display: inline-block;
+  float: right;
+}
+.social-container img {
+  margin: 0 7.5px;
+}
+
+/* Main css */
+.main-container {
+  display: grid;
+  position: relative;
+  z-index: 100;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.info-block h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 63px;
+  margin: 0;
+}
+.info-block h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.email-block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.email-input {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 410.86px;
+  height: 56px;
+  padding: 15px;
+}
+.email-input[type="text"]:focus {
+  outline : none;
+}
+.signup-button {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  width: 163.31px;
+  height: 56px;
+  margin: 0 15px;
+  background-color: rgba(2, 104, 150, 1);
   color: white;
+  border: none;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.signup-button:focus{
+   outline:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Notification css */
+.notification-container {
+  display: flex;
+}
+
+.notification-container h1, .notification-container p{
+  margin: 0;
+  color: black;
+}
+.notification-container h1{
+  font-size: 20px;
+}
+.notification-container p{
+  font-size: 13px;
+}
+
+.Toastify__toast--default {
+  border-radius: 10px;
+}
+.Toastify__progress-bar {
+  display: none;
+}
+#check {
+  height: 30px;
+  margin: 5px;
+  margin-right: 15px;
 }
